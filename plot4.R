@@ -2,7 +2,7 @@ hpc <- read.table(file = "household_power_consumption.txt",
                   sep = ";", 
                   skip = 66637,
                   nrows = 2880)
- par(mfrow=c(2,2))
+par(mfrow=c(2,2))
 plot(hpc$V3, type="l", ylab="Global Active Power",xlab="")
 plot(hpc$V5,type="l",ylab="Voltage",xlab="datetime")
 plot(hpc$V7, type="l",col="black",ylab="Energy sub metering",xlab="")
